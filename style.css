@@ -1,0 +1,92 @@
+
+    	/*Tablet*/
+@media only screen and (min-width: 600px) {
+	center{
+		zoom: 125%;
+
+	}
+	
+}
+@media only screen and (min-width: 768px) {
+	center{
+		zoom: 150%;
+
+	}
+	
+}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #9cd6e3;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+    
+
+        p {
+            color: #666;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            zoom: 125%
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+        .spinner-icon {
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.btn-primary {
+	zoom:75%;
+	padding: 10px
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #45a049; /* Hover state background color */
+}
+
+.btn-check {
+    background-color: #4CAF50; /* Completed button background color */
+}
+
+/* Progress bar styles */
+.progress {
+	zoom:75%;
+    margin-top: 10px;
+}
+
+.progress-bar {
+	zoom:75%;
+    background-color: green; /* Progress bar color */
+}
+
+/* Page background */
+body {
+    background-color: #f1f1f1; /* Page background color */
+}
