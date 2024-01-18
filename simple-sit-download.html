@@ -53,16 +53,12 @@ function w3_close() {
 
 
 <iframe width="300" height="150" src="https://www.youtube.com/embed/5Vg3qRc4ZBw" frameborder="0" allowfullscreen></iframe><br>
-<button style= " height:50px;" onclick="fun1()" id="subscribe" class="btn btn-primary" ><i  class="fa fa-youtube-play"></i><span style="padding-left:45px; padding-right:45px;"> Subscribe Channel </span><i id="1" class="fa fa-arrow-right"></i></button>
-<button style=" height:50px; margin-top: 10px;" onclick="fun2()" id="fbfollow" class="" ><i class="fa fa-facebook"></i><span style="padding-left:46px; padding-right:46px;">Follow on Facebook</span><i id="2" class="fa fa-arrow-right"></i></button>
-<button style=" height:50px; margin-top: 10px;" onclick="fun3()" id="instalike" class="btn btn-primary" ><i class="fa fa-instagram"></i><span style="padding-left:53px; padding-right:53px;">Like on Instagram</span><i id="3" class="fa fa-arrow-right"></i></button>
-<button style=" height:50px; margin-top: 10px;" onclick="fun4()" id="youtubelike" class="btn btn-primary" ><i class="fa fa-thumbs-up"></i><span style="padding-left:48px; padding-right:48px;">Like Youtube Video</span><i id="4" class="fa fa-arrow-right"></i></button>
-<button style=" height:50px; margin-top: 10px;" onclick="fun5()" id="secondsubscribe" class="btn btn-primary" ><i class="fa fa-youtube-play"></i><span style="padding-left:32px; padding-right:32px;">Subscribe 2nd Channel</span><i id="5" class="fa fa-arrow-right"></i></button>
-<button style=" height:50px; margin-top: 10px;" onclick="fun6()" id="instafollow" class="btn btn-primary" ><i class="fa fa-instagram"></i><span style="padding-left:43px; padding-right:43px;">Follow on Instagram</span><i id="6" class="fa fa-arrow-right"></i></button>
-<button style=" height:50px; margin-top: 10px;" onclick="fun7()" id="telegramjoin" class="btn btn-primary" ><i class="fa fa-telegram"></i><span style="padding-left:68px; padding-right:68px;">Join Telegram</span><i id="7" class="fa fa-arrow-right"></i></button>
-<button style=" height:50px; margin-top: 10px;" onclick="funshare()" id="ytshare" class="btn btn-primary" ><i class="fa fa-map"></i><span style="padding-left:75px; padding-right:75px;">Visit Website</span><i id="8" class="fa fa-arrow-right"></i></button>
-<button style=" height:50px; margin-top: 10px;" onclick="fun8()" id="discordjoin" class="btn btn-primary" ><i class="fa fa-map"></i><span style="padding-left:75px; padding-right:75px;">Join Discord</span><i id="9" class="fa fa-arrow-right"></i></button>
-            
+<button style="height:50px;" onclick="fun4()" id="youtubelike" class="btn btn-primary" >
+  <i class="fa fa-thumbs-up"></i>
+  <span style="padding-left:48px; padding-right:48px;">Like YouTube Video</span>
+  <i id="4" class="fa fa-arrow-right"></i>
+</button>
+
 <div style="margin-top: 10px;">
                         <small style="color:black;font-size: 12px; " id="progress">Steps Completed 0/0
                                                    <div style="width:312px; height:5px; background-color:silver;" class="progress">
@@ -322,35 +318,25 @@ document.getElementById("10").className = "fa fa-unlock";
 
 
 function fun4() {
-window.open('https://www.youtube.com/embed/5Vg3qRc4ZBw');
-document.getElementById("4").className = "fa fa-spinner spinner-icon";
-localStorage.setItem("c5", "1");
-localStorage.setItem("url","https://sub4unlock.net/response.php");
+  window.open('https://www.youtube.com/embed/5Vg3qRc4ZBw');
+  document.getElementById("4").className = "fa fa-spinner spinner-icon";
+  localStorage.setItem("c5", "1");
+  localStorage.setItem("url", "https://sub4unlock.net/response.php");
 
   setTimeout(() => {
+    f = 1;
+    document.getElementById("4").className = "fa fa-check";
+    document.getElementById("youtubelike").style.background = "green";
 
- f = 1;
- document.getElementById("4").className = "fa fa-check";
-document.getElementById("youtubelike").style.background = "green";
+    var pcomp = c + d + e + f + g + h + i + j + k;
+    document.getElementById('progress').innerHTML = "Steps Completed " + pcomp + "/" + a;
+    document.getElementById('p-width').style.width = pcomp * percentage + "%";
 
-
-
-
-
-var pcomp = c+d+e+f+g+h+i+j+k;
-document.getElementById('progress').innerHTML = "Steps Completed "+pcomp+"/"+ a;
-document.getElementById('p-width').style.width =  pcomp * percentage + "%";
-
-if(a == c+d+e+f+g+h+i+j+k){
-
-document.getElementById('file').disabled = false;    
-document.getElementById("10").className = "fa fa-unlock";
-
-
-
-
-}
-}, delayTime);
+    if (a == c + d + e + f + g + h + i + j + k) {
+      document.getElementById('file').disabled = false;
+      document.getElementById("10").className = "fa fa-unlock";
+    }
+  }, delayTime);
 }
 
 function fun5() {
